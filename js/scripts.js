@@ -1,5 +1,6 @@
 function myRuby() {
     var button = document.getElementById('ruby');
+    var hidden = false;
     if (button.style.display === 'none') {
         button.style.display = 'block';
     } else {
@@ -42,13 +43,3 @@ function myCNet() {
         button.style.display = 'none';
     }
 }
-
-$(document).ready(function() {
-  $("form#quiz").submit(function(event) {
-//    event.preventDefault();
-//    var number1 = parseInt($("name").val());
-//    var number2 = parseInt($("#add2").val());
-//    var result = add(number1, number2);
-//    $("#output").text(result);
-  });
-});
