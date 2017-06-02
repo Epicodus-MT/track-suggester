@@ -9,9 +9,11 @@
   </head>
   <body>
     <div class="container">
-      <h1>Epicodus - Tracker Suggester</h1>
-      <h2>What Programming Language Should I Learn?</h2>
-
+      <div class="jumbotron">
+        <div class='epicodus'><img src=img/epicodus.png alt="Epicodus logo" style="height:78px;"></div>
+        <h1>Tracker Suggester</h1>
+        <h2>What Programming Language Should I Learn?</h2>
+      </div>
       <p>Now that Epicodus offers so many different courses, we often get students unsure of what to take after they finish Introduction to Programming. If you're an Epicodus student or anybody wondering which language to learn, the first thing you need to decide is if you want to focus more on front-end or back-end development. Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design. If this type of work appeals to you, your best bet is to take CSS and Design classes at Epicodus.</p>
 
       <p>If you're more interested in back-end development, you have several choices of languages: C#, Java, PHP, and Ruby are all offered at Epicodus. My best advice about how to choose is not to worry too much. Most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school. Back-end programmers often switch languages as they change jobs, or even as they build different types of software at the same job. So don't stress too much about making the right choice! That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another.</p>
@@ -61,17 +63,19 @@
     </div>
 
     <div class="container">
-      <h2>Quiz</h2>
-      <h3>Take this quiz to determine which track is best for you:</h3>
+      <div id="quiz-header-text">
+        <h2>Quiz</h2>
+        <h4>Take this quiz to determine which track is best for you:</h4>
+      </div>
       <form id="quiz">
-      <div class="form-group">
+<!--      <div class="form-group">
           <label for="name"><h4>Name:</h4></label>
           <input id="name" class="personal-info" type="text">
         </div>
         <div class="form-group">
           <label for="address"><h4>Address:</h4></label>
           <input id="address" class="personal-info" type="text">
-        </div>
+        </div> -->
 
         <div class="radio">
           <h5>Which campus are you most interested in:</h5>
@@ -207,11 +211,12 @@
         <p>You will have to pay $<span id="rate"></span> per month to get car insurance. You should probably just bike or take the bus.</p>
       </div>
                           -->
-
-
-
-
-
+    </div>
+    <div class="thank-you" id="center-position">
+      <blockquote class="bg-info">
+        <p><img src=img/epicodus.png alt="Epicodus logo" style="height:60px;">We'd love to hear from you!</p>
+        <footer><a href='mailto:hi@epicodus.com'>Contact Us!</a></footer>
+      </blockquote>
     </div>
   </body>
 </html>

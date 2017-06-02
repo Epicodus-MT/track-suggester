@@ -1,0 +1,55 @@
+body {
+  background-color: #000000;
+  background-image: url("../img/program.jpg");
+  background-repeat:repeat-x;
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #AED6F1
+}
+
+.container#quiz {
+  padding: 10px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+#quiz-header-text {
+  text-align: center;
+}
+
+#quiz {
+  background: #E6EAE8;
+  padding: 10px;
+  margin: auto;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.thank-you img {
+  float:right;
+}
+
+.jumbotron {
+  margin-top: 20px;
+
+}
+
+.jumbotron .epicodus {
+  float: right;
+}
+.epicodus {
+  padding: 10px;
+  margin: auto;
+  max-width: 200px;
+  text-align: center;
+}
