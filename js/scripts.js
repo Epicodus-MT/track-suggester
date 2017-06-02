@@ -1,18 +1,5 @@
 function myRuby() {
     var button = document.getElementById('ruby');
-    $("p").hide();
-    if (button.style.display === 'none') {
-        button.style.display = 'block';
-    } else {
-        button.style.display = 'none';
-    }
-}
-
-
-
-
-function myRuby() {
-    var button = document.getElementById('ruby');
     if (button.style.display === 'none') {
         button.style.display = 'block';
     } else {
