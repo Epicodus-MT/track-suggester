@@ -1,15 +1,3 @@
-$(document).ready(function() {
-  $("form#input").submit(function() {
-    event.preventDefault();
-    var operator = $("input:radio[name=development]:checked").val();
-
-    var result;
-    if (development === "front") {
-      $("#output").text('#ruby-choice');
-    }
-  });
-});
-
 function myRuby() {
     var button = document.getElementById('ruby');
     var hidden = false;
@@ -55,3 +43,38 @@ function myCNet() {
         button.style.display = 'none';
     }
 }
+
+/* $(document).ready(function() {
+
+  $('#input').click(function(Submit) {
+  event.preventDefault();
+
+    var development= document.getElementsByName('development');
+    var location = document.getElementsByName('location');
+    var month= document.getElementsByName('month');
+
+    if (development[0].checked) {
+      alert("Great! You ought to study CSS/Design.");
+    } else {
+      if (location[0].checked) {
+        if (month[0].checked) {
+          alert("Great! You ought to study Java/Android.");
+        } else if (month[1].checked) {
+          alert("Great! You ought to study Ruby/Rails.");
+        } else if (month[1].checked) {
+          alert("Great! You ought to study C#/.NET.");
+        } else (month[1].checked) {
+          alert("Great! You ought to study C#/.NET.");
+        }
+      } else {
+        if (month[0].checked) {
+          alert("Great! You ought to study C#/.NET.");
+        } else if (month[1].checked) {
+          alert("Great! You ought to study Ruby/Rails.");
+        } else {
+          alert("Great! You ought to study Java/Android.");
+        }
+      }
+    }
+  });
+});                                     */
