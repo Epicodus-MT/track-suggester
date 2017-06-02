@@ -1,3 +1,15 @@
+$(document).ready(function() {
+  $("form#input").submit(function() {
+    event.preventDefault();
+    var operator = $("input:radio[name=development]:checked").val();
+
+    var result;
+    if (development === "front") {
+      $("#output").text('#ruby-choice');
+    }
+  });
+});
+
 function myRuby() {
     var button = document.getElementById('ruby');
     var hidden = false;
