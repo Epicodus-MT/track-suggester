@@ -3,6 +3,7 @@ body {
   background-image: url("../img/program.jpg");
   background-repeat:repeat-x;
   font-family: sans-serif;
+
 }
 
 .container {
@@ -11,6 +12,7 @@ body {
   background-color: #AED6F1;
   padding-left: 0px;
   padding-right: 0px;
+  font-size: 17px;
 }
 
 #output {
