@@ -30,7 +30,8 @@ $(document).ready(function() {
       } else if (language === 'content-managment' && company === 'fast-company') {
           resultText = name + ", you ought to study PHP, so you can learn to work with a versatile language, and find numerous and diverse employment options!"
       } else if (language === 'internal-software' && company === 'established-company') {
-        resultText = name + ", you ought to study CNET, so you can learn how to building internal software!"      } else {
+        resultText = name + ", you ought to study CNET, so you can learn how to building internal software!"
+      } else {
         resultText = name + ", you ought to study JAVA, so you can learn how to make mobile apps for Android!"
       }
     }

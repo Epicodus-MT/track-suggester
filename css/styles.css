@@ -6,11 +6,11 @@ body {
 }
 
 .container {
-  padding-left: 10px;
-  padding-right: 10px;
   max-width: 800px;
   margin: auto;
-  background-color: #AED6F1
+  background-color: #AED6F1;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #output {
@@ -18,11 +18,17 @@ body {
   text-align: center;
 }
 
-.container#quiz {
+#info {
+  padding: 10px;
+}
+
+#quiz {
   padding: 10px;
   max-width: 800px;
   margin: auto;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .quiz-header-text {
@@ -43,6 +49,10 @@ body {
 
 .thank-you img {
   float:right;
+}
+
+.thank-you blockquote {
+  margin: 0;
 }
 
 .jumbotron {

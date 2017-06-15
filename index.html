@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Tracker Suggester</title>
-		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-		<link href="css/styles.css" rel="stylesheet" type="text/css">
-		<script src="js/jquery.js"></script>
-		<script src="js/scripts.js"></script>
-	</head>
-	<body>
-		<div class="container">
+
+<head>
+	<title>Tracker Suggester</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+
+<body>
+	<div class="container">
 			<div class="jumbotron">
 				<div class='epicodus'><img src=img/epicodus.png alt="Epicodus logo" style="height:78px;"></div>
 				<h1>Tracker Suggester</h1>
 				<h2>What Programming Language Should I Learn?</h2>
 			</div>
+			<div id="info">
 			<h5>Now that Epicodus offers so many different courses, we often get students unsure of what to take after they finish Introduction to Programming. If you're an Epicodus student or anybody wondering which language to learn, the first thing you need to decide is if you want to focus more on front-end or back-end development. Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design. If this type of work appeals to you, your best bet is to take CSS and Design classes at Epicodus.</h5>
 			<h5>If you're more interested in back-end development, you have several choices of languages: C#, Java, PHP, and Ruby are all offered at Epicodus. My best advice about how to choose is not to worry too much. Most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school. Back-end programmers often switch languages as they change jobs, or even as they build different types of software at the same job. So don't stress too much about making the right choice! That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another.</h5>
 			<p>Currently, Epicodus offers the following tracks in Portland and Seattle:
@@ -21,53 +24,62 @@
 					<li>
 						<button onclick="toggleSection('ruby')">Ruby/Rails</button>
 						<div id="ruby" style="display: none">
-						<p><strong>Ruby</strong> is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
-					</div>
-				</li>
-				<li>
-					<button onclick="toggleSection('php')">PHP/Drupal</button>
-					<div id="php" style="display: none">
-						<p><strong>PHP</strong> is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
-					</div>
-				</li>
-				<li>
-					<button onclick="toggleSection('java')">Java/Android</button>
-					<div id="java" style="display: none">
-						<p><strong>Java</strong> is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
-					</div>
-				</li>
-				<li>
-					<button onclick="toggleSection('css')">CSS/Design</button>
-					<div id="css" style="display: none">
-						<p><strong>Design</strong> - after establishing solid programming fundamentals in CSS and JavaScript, this course introduces students to the vast world of Design. This course focuses on maintaining a strong balance between theory and practice. Students will not only cultivate a solid foundation of basic design principles, but will also gain experience using modern, industry-standard tools such as Sketch and InVision.</p>
-					</div>
-				</li>
-				<li>
-					<button onclick="toggleSection('cnet')">C#/.NET</button>
-					<div id="cnet" style="display: none">
-						<p><strong>C#</strong> is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
-					</div>
-				</li>
+							<p><strong>Ruby</strong> is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby.
+								Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product
+								quickly.</p>
+						</div>
+					</li>
+					<li>
+						<button onclick="toggleSection('php')">PHP/Drupal</button>
+						<div id="php" style="display: none">
+							<p><strong>PHP</strong> is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility
+								of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government
+								websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
+						</div>
+					</li>
+					<li>
+						<button onclick="toggleSection('java')">Java/Android</button>
+						<div id="java" style="display: none">
+							<p><strong>Java</strong> is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android
+								user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or
+								in high-performance applications, Java could be a good language to learn.</p>
+						</div>
+					</li>
+					<li>
+						<button onclick="toggleSection('css')">CSS/Design</button>
+						<div id="css" style="display: none">
+							<p><strong>Design</strong> - after establishing solid programming fundamentals in CSS and JavaScript, this course introduces students to the vast world of Design. This course focuses on maintaining a strong balance between theory and practice. Students
+								will not only cultivate a solid foundation of basic design principles, but will also gain experience using modern, industry-standard tools such as Sketch and InVision.</p>
+						</div>
+					</li>
+					<li>
+						<button onclick="toggleSection('cnet')">C#/.NET</button>
+						<div id="cnet" style="display: none">
+							<p><strong>C#</strong> is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market.
+								C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea
+								of working for a larger company on business software, C# is a great choice.</p>
+						</div>
+					</li>
+				</ul>
+			</p>
+			<p>Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks
+				including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing. </p>
+			<p>Every track starts with Introduction to Programming, and includes an advanced JavaScript course, as well as two language-specific courses — four five-week sessions in total. In addition, students complete two weeks of job and internship prep and finish
+				their studies with a five-week internship.</p>
+			<p>Totalling:</p>
+			<ul>
+				<li>800 hours classroom learning</li>
+				<li>80 hours job and internship preparation</li>
+				<li>150 hours internship learning</li>
 			</ul>
-		</p>
-		<p>Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing. </p>
-		<p>Every track starts with Introduction to Programming, and includes an advanced JavaScript course, as well as two language-specific courses — four five-week sessions in total. In addition, students complete two weeks of job and internship prep and finish their studies with a five-week internship.</p>
-		<p>Totalling:</p>
-		<ul>
-			<li>800 hours classroom learning</li>
-			<li>80 hours job and internship preparation</li>
-			<li>150 hours internship learning</li>
-		</ul>
-	</div>
-	<div class="container">
+		</div>
+
 		<div class="quiz-header-text">
 			<h2>Quiz</h2>
 			<h4>Take this quiz to determine which track is best for you:</h4>
 		</div>
 		<div class='quiz' id="inputs">
-
-
-  		<form id="form1">
+			<form id="form1">
 				<div class="form-group">
 					<label for="name"><h4>Name:</h4></label>
 					<input id="name" class="personal-info" type="text">
@@ -77,7 +89,7 @@
 					<input id="address" class="personal-info" type="text">
 				</div>
 
-        <!-- Location -->
+				<!-- Location -->
 				<div class="radio">
 					<h4>Which campus are you most interested in:</h4>
 					<label>
@@ -91,9 +103,9 @@
 						Seattle
 					</label>
 				</div>
-        <!-- /Location -->
+				<!-- /Location -->
 
-        <!-- Development -->
+				<!-- Development -->
 				<div class="radio">
 					<h4>Choose your focus:</h4>
 					<label>
@@ -107,8 +119,10 @@
 						Back-End
 					</label>
 				</div>
-        <p><font color='blue'>If you chose 'Front-End' please disregard the rest of the questions and <u><em>submit</em></u>.</font></p>
-        <!-- /Development -->
+				<p>
+					<font color='blue'>If you chose 'Front-End' please disregard the rest of the questions and <u><em>submit</em></u>.</font>
+				</p>
+				<!-- /Development -->
 
 				<!-- Month -->
 				<div class="radio">
@@ -136,9 +150,9 @@
 						October
 					</label>
 				</div>
-        <!-- /Month -->
+				<!-- /Month -->
 
-        <!-- Language -->
+				<!-- Language -->
 				<div class="radio">
 					<h4>You like to work with a language that...</h4>
 					<label>
@@ -164,9 +178,9 @@
 						is used in many different applications
 					</label>
 				</div>
-        <!-- /Language -->
+				<!-- /Language -->
 
-        <!-- Company -->
+				<!-- Company -->
 				<div class="radio">
 					<h4>You would like to work for...</h4>
 					<label>
@@ -198,26 +212,27 @@
 						any company
 					</label>
 				</div>
-        <!-- /Company -->
+				<!-- /Company -->
 
 				<button type="submit" class="btn">Submit</button>
 			</form>
-    </div>
-		<div id="output">
-			<div class='quiz'>
-				<div class="quiz-header-text">
-					<h3>Results</h3>
-				</div>
+			<div id="output">
+				<div class='quiz'>
+					<div class="quiz-header-text">
+						<h3>Results</h3>
+					</div>
 
-        <div id="quiz-result"></div>
+					<div id="quiz-result"></div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="thank-you" id="center-position">
-		<blockquote class="bg-info">
-			<p><img src=img/epicodus.png alt="Epicodus logo" style="height:60px;">We'd love to hear from you!</p>
-			<footer><a href='mailto:hi@epicodus.com'>Contact Us!</a></footer>
-		</blockquote>
+
+		<div class="thank-you" id="center-position">
+			<blockquote class="bg-info">
+				<p><img src=img/epicodus.png alt="Epicodus logo" style="height:60px;">We'd love to hear from you!</p>
+				<footer><a href='mailto:hi@epicodus.com'>Contact Us!</a></footer>
+			</blockquote>
+		</div>
 	</div>
 </body>
 </html>
