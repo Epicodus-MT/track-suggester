@@ -23,9 +23,16 @@ $(document).ready(function() {
 
     var resultText = '';
     if (development === 'front') {
-      resultText = 'Be Design';
+      resultText = name + ", you ought to study DESIGN, so you can cultivate a solid foundation of basic design principles and gain experience using modern, industry-standard tools!"
     } else {
-      resultText = 'Do Not be design';
+      if (language === 'web-applications' && company === 'small-company') {
+        resultText = name + ", you ought to study RUBY, so you can build interactive web applications!"
+      } else if (language === 'content-managment' && company === 'fast-company') {
+          resultText = name + ", you ought to study PHP, so you can learn to work with a versatile language, and find numerous and diverse employment options!"
+      } else if (language === 'internal-software' && company === 'established-company') {
+        resultText = name + ", you ought to study CNET, so you can learn how to building internal software!"      } else {
+        resultText = name + ", you ought to study JAVA, so you can learn how to make mobile apps for Android!"
+      }
     }
 
     $('#inputs').css('display', 'none');
