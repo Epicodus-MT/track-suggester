@@ -74,12 +74,10 @@
 			</ul>
 		</div>
 
-		<div class="quiz-header-text">
-			<h2>Quiz</h2>
-			<h4>Take this quiz to determine which track is best for you:</h4>
-		</div>
 		<div class='quiz' id="inputs">
 			<form id="form1">
+				<h2>Quiz</h2>
+				<h4>Take this quiz to determine which track is best for you:</h4>
 				<div class="form-group">
 					<label for="name"><h4>Name:</h4></label>
 					<input id="name" class="personal-info" type="text">
@@ -88,6 +86,7 @@
 					<label for="address"><h4>Address:</h4></label>
 					<input id="address" class="personal-info" type="text">
 				</div>
+
 
 				<!-- Location -->
 				<div class="radio">
@@ -216,14 +215,15 @@
 
 				<button type="submit" class="btn">Submit</button>
 			</form>
-			<div id="output">
-				<div class='quiz'>
-					<div class="quiz-header-text">
-						<h3>Results</h3>
-					</div>
+		</div>
 
-					<div id="quiz-result"></div>
+		<div id="output">
+			<div class='quiz'>
+				<div class="quiz-header-text">
+					<h3>Quiz Results</h3>
 				</div>
+
+				<div id="quiz-result"></div>
 			</div>
 		</div>
 
